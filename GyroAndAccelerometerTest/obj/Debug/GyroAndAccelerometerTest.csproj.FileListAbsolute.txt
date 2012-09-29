@@ -1,0 +1,70 @@
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\le\GyroAndAccelerometerTest.exe
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\be\GyroAndAccelerometerTest.exe
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\le\GyroAndAccelerometerTest.pdb
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\be\GyroAndAccelerometerTest.pdb
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\GyroAndAccelerometerTest.exe
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\GyroAndAccelerometerTest.pdb
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\le\GyroAndAccelerometerTest.pe
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\le\GyroAndAccelerometerTest.pdbx
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\be\GyroAndAccelerometerTest.pe
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\be\GyroAndAccelerometerTest.pdbx
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\LE\SecretLabs.NETMF.Hardware.pe
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\LE\SecretLabs.NETMF.Hardware.Netduino.pe
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\BE\SecretLabs.NETMF.Hardware.pe
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\BE\SecretLabs.NETMF.Hardware.Netduino.pe
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\LE\SecretLabs.NETMF.Hardware.pdbx
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\LE\SecretLabs.NETMF.Hardware.Netduino.pdbx
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\BE\SecretLabs.NETMF.Hardware.pdbx
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\BE\SecretLabs.NETMF.Hardware.Netduino.pdbx
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\SecretLabs.NETMF.Hardware.dll
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\SecretLabs.NETMF.Hardware.Netduino.dll
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\SecretLabs.NETMF.Hardware.pdb
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\SecretLabs.NETMF.Hardware.Netduino.pdb
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\obj\Debug\TinyCLR_DebugReferences.cache
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\obj\Debug\GyroAndAccelerometerTest.exe
+c:\users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\obj\Debug\GyroAndAccelerometerTest.pdb
+C:\Users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\LE\HydraMF.Math.pe
+C:\Users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\BE\HydraMF.Math.pe
+C:\Users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\LE\HydraMF.Math.pdbx
+C:\Users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\BE\HydraMF.Math.pdbx
+C:\Users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\HydraMF.Math.dll
+C:\Users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\HydraMF.Math.pdb
+C:\Users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\bin\Debug\HydraMF.Math.xml
+C:\Users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\obj\Debug\GyroAndAccelerometerTest.csprojResolveAssemblyReference.cache
+C:\Users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\obj\Debug\be\GyroAndAccelerometerTest.pe
+C:\Users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\obj\Debug\be\GyroAndAccelerometerTest.pdbx
+C:\Users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\obj\Debug\le\GyroAndAccelerometerTest.pe
+C:\Users\marcin\documents\visual studio 2010\Projects\GyroAndAccelerometerTest\GyroAndAccelerometerTest\obj\Debug\le\GyroAndAccelerometerTest.pdbx
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\le\GyroAndAccelerometerTest.exe
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\be\GyroAndAccelerometerTest.exe
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\le\GyroAndAccelerometerTest.pdb
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\be\GyroAndAccelerometerTest.pdb
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\GyroAndAccelerometerTest.exe
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\GyroAndAccelerometerTest.pdb
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\le\GyroAndAccelerometerTest.pe
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\le\GyroAndAccelerometerTest.pdbx
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\be\GyroAndAccelerometerTest.pe
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\be\GyroAndAccelerometerTest.pdbx
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\LE\HydraMF.Math.pe
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\LE\SecretLabs.NETMF.Hardware.pe
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\LE\SecretLabs.NETMF.Hardware.Netduino.pe
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\BE\HydraMF.Math.pe
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\BE\SecretLabs.NETMF.Hardware.pe
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\BE\SecretLabs.NETMF.Hardware.Netduino.pe
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\LE\HydraMF.Math.pdbx
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\LE\SecretLabs.NETMF.Hardware.pdbx
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\LE\SecretLabs.NETMF.Hardware.Netduino.pdbx
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\BE\HydraMF.Math.pdbx
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\BE\SecretLabs.NETMF.Hardware.pdbx
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\BE\SecretLabs.NETMF.Hardware.Netduino.pdbx
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\HydraMF.Math.dll
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\SecretLabs.NETMF.Hardware.dll
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\SecretLabs.NETMF.Hardware.Netduino.dll
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\HydraMF.Math.pdb
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\HydraMF.Math.xml
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\SecretLabs.NETMF.Hardware.pdb
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\bin\Debug\SecretLabs.NETMF.Hardware.Netduino.pdb
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\obj\Debug\GyroAndAccelerometerTest.csprojResolveAssemblyReference.cache
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\obj\Debug\TinyCLR_DebugReferences.cache
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\obj\Debug\GyroAndAccelerometerTest.exe
+C:\Users\marcin\Documents\GitHub\MPU6050_RAW\GyroAndAccelerometerTest\obj\Debug\GyroAndAccelerometerTest.pdb

@@ -1,0 +1,1440 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HydraMF.Math</name>
+    </assembly>
+    <members>
+        <member name="T:HydraMF.Math.Vector3Single">
+            <summary>
+              Defines a vector with three single-precision floating-point components. 
+            </summary>
+            <remarks>This structure is immutable.</remarks>
+        </member>
+        <member name="F:HydraMF.Math.Vector3Single.Zero">
+            <summary>
+            Returns a vector with all of its components set to zero. 
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.Vector3Single.UnitX">
+            <summary>
+            Returns the unit vector for the x-axis.  
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.Vector3Single.UnitY">
+            <summary>
+            Returns the unit vector for the y-axis. 
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.Vector3Single.UnitZ">
+            <summary>
+            Returns the unit vector for the z-axis. 
+            </summary>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.#ctor(System.Single,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of vector. 
+            </summary>
+            <param name="x">Initial value for the x-component of the vector.</param>
+            <param name="y">Initial value for the y-component of the vector.</param>
+            <param name="z">Initial value for the z-component of the vector.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.LengthSquared">
+            <summary>
+            Calculates the length of the vector squared.
+            </summary>
+            <returns>The length of the vector squared.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Equals(HydraMF.Math.Vector3Single)">
+            <summary>
+              Determines whether the specified vector is equal to the current vector.
+            </summary>
+            <param name = "other">The vector to compare with the current vector. </param>
+            <returns>true if the specified vector is equal to the current vector; otherwise, false.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.op_Equality(HydraMF.Math.Vector3Single,HydraMF.Math.Vector3Single)">
+            <summary>
+              Compares two vector.
+            </summary>
+            <param name = "left">A vector to compare.</param>
+            <param name = "right">A vector to compare.</param>
+            <returns>
+              true if the X and Y values of left and right are equal; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.op_Inequality(HydraMF.Math.Vector3Single,HydraMF.Math.Vector3Single)">
+            <summary>
+              Compares two vector objects.
+            </summary>
+            <param name = "left">A vector to compare.</param>
+            <param name = "right">A vector to compare.</param>
+            <returns>
+              true if the values of either the X or Y of left and right differ; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.op_UnaryNegation(HydraMF.Math.Vector3Single)">
+            <summary>
+            Returns a vector pofloating in the opposite direction. 
+            </summary>
+            <param name = "value">The vector to negate.</param>
+            <returns>Vector pofloating in the opposite direction. </returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Negate(HydraMF.Math.Vector3Single@,HydraMF.Math.Vector3Single@)">
+            <summary>
+            Returns a vector pofloating in the opposite direction.
+            </summary>
+            <param name="value">The vector to negate.</param>
+            <param name="result">Vector pofloating in the opposite direction. </param>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Negate(HydraMF.Math.Vector3Single)">
+            <summary>
+            Returns a vector pofloating in the opposite direction. 
+            </summary>
+            <param name="value">The vector to negate.</param>
+            <returns>Vector pofloating in the opposite direction. </returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.op_Addition(HydraMF.Math.Vector3Single,HydraMF.Math.Vector3Single)">
+            <summary>
+            Adds two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the addition.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Add(HydraMF.Math.Vector3Single@,HydraMF.Math.Vector3Single@,HydraMF.Math.Vector3Single@)">
+            <summary>
+            Adds two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <param name="result">Result of the addition.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Add(HydraMF.Math.Vector3Single,HydraMF.Math.Vector3Single)">
+            <summary>
+            Adds two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the addition.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.op_Subtraction(HydraMF.Math.Vector3Single,HydraMF.Math.Vector3Single)">
+            <summary>
+            Subtracts a vector from a vector.  
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the subtraction.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Subtract(HydraMF.Math.Vector3Single@,HydraMF.Math.Vector3Single@,HydraMF.Math.Vector3Single@)">
+            <summary>
+            Subtracts a vector from a vector.  
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <param name="result">Result of the subtraction.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Subtract(HydraMF.Math.Vector3Single,HydraMF.Math.Vector3Single)">
+            <summary>
+            Subtracts a vector from a vector.  
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the subtraction.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.op_Multiply(System.Single,HydraMF.Math.Vector3Single)">
+            <summary>
+            Multiplies a vector by a scalar value. 
+            </summary>
+            <param name="left">Scalar value.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the multiplication.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Multiply(System.Single@,HydraMF.Math.Vector3Single@,HydraMF.Math.Vector3Single@)">
+            <summary>
+            Multiplies a vector by a scalar value.
+            </summary>
+            <param name="left">Scalar value.</param>
+            <param name="right">Source vector.</param>
+            <param name="result">Result of the multiplication.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Multiply(System.Single,HydraMF.Math.Vector3Single)">
+            <summary>
+            Multiplies a vector by a scalar value.
+            </summary>
+            <param name="left">Scalar value.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the multiplication.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.op_Division(HydraMF.Math.Vector3Single,System.Single)">
+            <summary>
+            Divides a vector by a scalar value. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Scalar value.</param>
+            <returns>Result of the division.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Divide(HydraMF.Math.Vector3Single@,System.Single@,HydraMF.Math.Vector3Single@)">
+            <summary>
+            Divides a vector by a scalar value.
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Scalar value.</param>
+            <param name="result">Result of the division.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Divide(HydraMF.Math.Vector3Single,System.Single)">
+            <summary>
+            Divides a vector by a scalar value.
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Scalar value.</param>
+            <returns>Result of the division.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Dot(HydraMF.Math.Vector3Single,HydraMF.Math.Vector3Single)">
+            <summary>
+            Calculates the dot product of two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>The dot product of the two vectors.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Dot(HydraMF.Math.Vector3Single@,HydraMF.Math.Vector3Single@,System.Single@)">
+            <summary>
+            Calculates the dot product of two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <param name="result"></param>
+            <returns>The dot product of the two vectors.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Cross(HydraMF.Math.Vector3Single,HydraMF.Math.Vector3Single)">
+            <summary>
+            Calculates the cross product of two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>The cross product of the two vectors.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Cross(HydraMF.Math.Vector3Single@,HydraMF.Math.Vector3Single@,HydraMF.Math.Vector3Single@)">
+            <summary>
+            Calculates the cross product of two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <param name="result">The cross product of the two vectors.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Lerp(HydraMF.Math.Vector3Single,HydraMF.Math.Vector3Single,System.Single)">
+            <summary>
+            Performs a linear interpolation between two vectors. 
+            </summary>
+            <param name="value0">Source vector.</param>
+            <param name="value1">Source vector.</param>
+            <param name="amount">Value between 0 and 1 indicating the weight of value2. </param>
+            <returns>The linear interpolation of the two vectors.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Lerp(HydraMF.Math.Vector3Single@,HydraMF.Math.Vector3Single@,System.Single,HydraMF.Math.Vector3Single@)">
+            <summary>
+            Performs a linear interpolation between two vectors. 
+            </summary>
+            <param name="value0">Source vector.</param>
+            <param name="value1">Source vector.</param>
+            <param name="amount">Value between 0 and 1 indicating the weight of value2. </param>
+            <param name="result">The linear interpolation of the two vectors.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.op_Implicit(HydraMF.Math.Vector3Int32)~HydraMF.Math.Vector3Single">
+            <summary>
+            Implicitly converts a Vector3Int into a Vector3Single.
+            </summary>
+            <param name="value">The vector to convert.</param>
+            <returns>The resulting conversion.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.op_Explicit(HydraMF.Math.Vector3Single)~HydraMF.Math.Vector3Int32">
+            <summary>
+            Explicitly converts a Vector3Single into a Vector3Int.
+            </summary>
+            <param name="value">The vector to convert.</param>
+            <returns>The resulting conversion.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.Equals(System.Object)">
+            <summary>
+            Returns a value that indicates whether the current instance is equal to a specified object. 
+            </summary>
+            <param name="obj">Object to make the comparison with.</param>
+            <returns>true if the current instance is equal to the specified object; false otherwise.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Single.GetHashCode">
+            <summary>
+            Gets the hash code of the vector object. 
+            </summary>
+            <returns>Hash code of the vector object.</returns>
+        </member>
+        <member name="P:HydraMF.Math.Vector3Single.X">
+            <summary>
+            Gets or sets the x-component of the vector. 
+            </summary>
+        </member>
+        <member name="P:HydraMF.Math.Vector3Single.Y">
+            <summary>
+            Gets or sets the y-component of the vector. 
+            </summary>
+        </member>
+        <member name="P:HydraMF.Math.Vector3Single.Z">
+            <summary>
+            Gets or sets the z-component of the vector. 
+            </summary>
+        </member>
+        <member name="T:HydraMF.Math.Vector3Int32">
+            <summary>
+              Defines a vector with three Int32 components. 
+            </summary>
+            <remarks>This structure is immutable.</remarks>
+        </member>
+        <member name="F:HydraMF.Math.Vector3Int32.Zero">
+            <summary>
+            Returns a vector with all of its components set to zero. 
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.Vector3Int32.UnitX">
+            <summary>
+            Returns the unit vector for the x-axis.  
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.Vector3Int32.UnitY">
+            <summary>
+            Returns the unit vector for the y-axis. 
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.Vector3Int32.UnitZ">
+            <summary>
+            Returns the unit vector for the z-axis. 
+            </summary>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of vector. 
+            </summary>
+            <param name="x">Initial value for the x-component of the vector.</param>
+            <param name="y">Initial value for the y-component of the vector.</param>
+            <param name="z">Initial value for the z-component of the vector.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.LengthSquared">
+            <summary>
+            Calculates the length of the vector squared.
+            </summary>
+            <returns>The length of the vector squared.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.Equals(HydraMF.Math.Vector3Int32)">
+            <summary>
+              Determines whether the specified vector is equal to the current vector.
+            </summary>
+            <param name = "other">The vector to compare with the current vector. </param>
+            <returns>true if the specified vector is equal to the current vector; otherwise, false.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.op_Equality(HydraMF.Math.Vector3Int32,HydraMF.Math.Vector3Int32)">
+            <summary>
+              Compares two vector.
+            </summary>
+            <param name = "left">A vector to compare.</param>
+            <param name = "right">A vector to compare.</param>
+            <returns>
+              true if the X and Y values of left and right are equal; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.op_Inequality(HydraMF.Math.Vector3Int32,HydraMF.Math.Vector3Int32)">
+            <summary>
+              Compares two vector objects.
+            </summary>
+            <param name = "left">A vector to compare.</param>
+            <param name = "right">A vector to compare.</param>
+            <returns>
+              true if the values of either the X or Y of left and right differ; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.op_UnaryNegation(HydraMF.Math.Vector3Int32)">
+            <summary>
+            Returns a vector pointing in the opposite direction. 
+            </summary>
+            <param name = "value">The vector to negate.</param>
+            <returns>Vector pointing in the opposite direction. </returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.Negate(HydraMF.Math.Vector3Int32@,HydraMF.Math.Vector3Int32@)">
+            <summary>
+            Returns a vector pointing in the opposite direction.
+            </summary>
+            <param name="value">The vector to negate.</param>
+            <param name="result">Vector pointing in the opposite direction. </param>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.Negate(HydraMF.Math.Vector3Int32)">
+            <summary>
+            Returns a vector pointing in the opposite direction. 
+            </summary>
+            <param name="value">The vector to negate.</param>
+            <returns>Vector pointing in the opposite direction. </returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.op_Addition(HydraMF.Math.Vector3Int32,HydraMF.Math.Vector3Int32)">
+            <summary>
+            Adds two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the addition.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.Add(HydraMF.Math.Vector3Int32@,HydraMF.Math.Vector3Int32@,HydraMF.Math.Vector3Int32@)">
+            <summary>
+            Adds two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <param name="result">Result of the addition.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.Add(HydraMF.Math.Vector3Int32,HydraMF.Math.Vector3Int32)">
+            <summary>
+            Adds two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the addition.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.op_Subtraction(HydraMF.Math.Vector3Int32,HydraMF.Math.Vector3Int32)">
+            <summary>
+            Subtracts a vector from a vector.  
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the subtraction.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.Subtract(HydraMF.Math.Vector3Int32@,HydraMF.Math.Vector3Int32@,HydraMF.Math.Vector3Int32@)">
+            <summary>
+            Subtracts a vector from a vector.  
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <param name="result">Result of the subtraction.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.Subtract(HydraMF.Math.Vector3Int32,HydraMF.Math.Vector3Int32)">
+            <summary>
+            Subtracts a vector from a vector.  
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the subtraction.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.op_Multiply(System.Int32,HydraMF.Math.Vector3Int32)">
+            <summary>
+            Multiplies a vector by a scalar value. 
+            </summary>
+            <param name="left">Scalar value.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the multiplication.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.Multiply(System.Int32@,HydraMF.Math.Vector3Int32@,HydraMF.Math.Vector3Int32@)">
+            <summary>
+            Multiplies a vector by a scalar value.
+            </summary>
+            <param name="left">Scalar value.</param>
+            <param name="right">Source vector.</param>
+            <param name="result">Result of the multiplication.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.Multiply(System.Int32,HydraMF.Math.Vector3Int32)">
+            <summary>
+            Multiplies a vector by a scalar value.
+            </summary>
+            <param name="left">Scalar value.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the multiplication.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.op_Division(HydraMF.Math.Vector3Int32,System.Int32)">
+            <summary>
+            Divides a vector by a scalar value. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Scalar value.</param>
+            <returns>Result of the division.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.Divide(HydraMF.Math.Vector3Int32@,System.Int32@,HydraMF.Math.Vector3Int32@)">
+            <summary>
+            Divides a vector by a scalar value.
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Scalar value.</param>
+            <param name="result">Result of the division.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.Divide(HydraMF.Math.Vector3Int32,System.Int32)">
+            <summary>
+            Divides a vector by a scalar value.
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Scalar value.</param>
+            <returns>Result of the division.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.Dot(HydraMF.Math.Vector3Int32,HydraMF.Math.Vector3Int32)">
+            <summary>
+            Calculates the dot product of two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>The dot product of the two vectors.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.Dot(HydraMF.Math.Vector3Int32@,HydraMF.Math.Vector3Int32@,System.Int32@)">
+            <summary>
+            Calculates the dot product of two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <param name="result"></param>
+            <returns>The dot product of the two vectors.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.Cross(HydraMF.Math.Vector3Int32,HydraMF.Math.Vector3Int32)">
+            <summary>
+            Calculates the cross product of two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>The cross product of the two vectors.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.Cross(HydraMF.Math.Vector3Int32@,HydraMF.Math.Vector3Int32@,HydraMF.Math.Vector3Int32@)">
+            <summary>
+            Calculates the cross product of two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <param name="result">The cross product of the two vectors.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.Equals(System.Object)">
+            <summary>
+            Returns a value that indicates whether the current instance is equal to a specified object. 
+            </summary>
+            <param name="obj">Object to make the comparison with.</param>
+            <returns>true if the current instance is equal to the specified object; false otherwise.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector3Int32.GetHashCode">
+            <summary>
+            Gets the hash code of the vector object. 
+            </summary>
+            <returns>Hash code of the vector object.</returns>
+        </member>
+        <member name="P:HydraMF.Math.Vector3Int32.X">
+            <summary>
+            Gets or sets the x-component of the vector. 
+            </summary>
+        </member>
+        <member name="P:HydraMF.Math.Vector3Int32.Y">
+            <summary>
+            Gets or sets the y-component of the vector. 
+            </summary>
+        </member>
+        <member name="P:HydraMF.Math.Vector3Int32.Z">
+            <summary>
+            Gets or sets the z-component of the vector. 
+            </summary>
+        </member>
+        <member name="T:HydraMF.Math.Vector2Int32">
+            <summary>
+              Defines a vector with two Int32 components. 
+            </summary>
+            <remarks>This structure is immutable.</remarks>
+        </member>
+        <member name="F:HydraMF.Math.Vector2Int32.Zero">
+            <summary>
+            Returns a vector with all of its components set to zero. 
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.Vector2Int32.UnitX">
+            <summary>
+            Returns the unit vector for the x-axis.  
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.Vector2Int32.UnitY">
+            <summary>
+            Returns the unit vector for the y-axis. 
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.Vector2Int32.One">
+            <summary>
+            Returns a vector with all of its components set to one. 
+            </summary>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of vector. 
+            </summary>
+            <param name="x">Initial value for the x-component of the vector.</param>
+            <param name="y">Initial value for the y-component of the vector.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.#ctor(HydraMF.Math.Vector2Int32)">
+            <summary>
+            Initializes a new instance of vector. 
+            </summary>
+            <param name="vector">Initial value for the vector.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.LengthSquared">
+            <summary>
+            Calculates the length of the vector squared.
+            </summary>
+            <returns>The length of the vector squared.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.Equals(HydraMF.Math.Vector2Int32)">
+            <summary>
+              Determines whether the specified vector is equal to the current vector.
+            </summary>
+            <param name = "other">The vector to compare with the current vector. </param>
+            <returns>true if the specified vector is equal to the current vector; otherwise, false.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.op_Equality(HydraMF.Math.Vector2Int32,HydraMF.Math.Vector2Int32)">
+            <summary>
+              Compares two vector.
+            </summary>
+            <param name = "left">A vector to compare.</param>
+            <param name = "right">A vector to compare.</param>
+            <returns>
+              true if the X and Y values of left and right are equal; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.op_Inequality(HydraMF.Math.Vector2Int32,HydraMF.Math.Vector2Int32)">
+            <summary>
+              Compares two vector objects.
+            </summary>
+            <param name = "left">A vector to compare.</param>
+            <param name = "right">A vector to compare.</param>
+            <returns>
+              true if the values of either the X or Y of left and right differ; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.op_UnaryNegation(HydraMF.Math.Vector2Int32)">
+            <summary>
+            Returns a vector pointing in the opposite direction. 
+            </summary>
+            <param name = "value">The vector to negate.</param>
+            <returns>Vector pointing in the opposite direction. </returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.Negate(HydraMF.Math.Vector2Int32@,HydraMF.Math.Vector2Int32@)">
+            <summary>
+            Returns a vector pointing in the opposite direction.
+            </summary>
+            <param name="value">The vector to negate.</param>
+            <param name="result">Vector pointing in the opposite direction. </param>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.Negate(HydraMF.Math.Vector2Int32)">
+            <summary>
+            Returns a vector pointing in the opposite direction. 
+            </summary>
+            <param name="value">The vector to negate.</param>
+            <returns>Vector pointing in the opposite direction. </returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.op_Addition(HydraMF.Math.Vector2Int32,HydraMF.Math.Vector2Int32)">
+            <summary>
+            Adds two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the addition.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.Add(HydraMF.Math.Vector2Int32@,HydraMF.Math.Vector2Int32@,HydraMF.Math.Vector2Int32@)">
+            <summary>
+            Adds two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <param name="result">Result of the addition.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.Add(HydraMF.Math.Vector2Int32,HydraMF.Math.Vector2Int32)">
+            <summary>
+            Adds two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the addition.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.op_Subtraction(HydraMF.Math.Vector2Int32,HydraMF.Math.Vector2Int32)">
+            <summary>
+            Subtracts a vector from a vector.  
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the subtraction.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.Subtract(HydraMF.Math.Vector2Int32@,HydraMF.Math.Vector2Int32@,HydraMF.Math.Vector2Int32@)">
+            <summary>
+            Subtracts a vector from a vector.  
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <param name="result">Result of the subtraction.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.Subtract(HydraMF.Math.Vector2Int32,HydraMF.Math.Vector2Int32)">
+            <summary>
+            Subtracts a vector from a vector.  
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the subtraction.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.op_Multiply(System.Int32,HydraMF.Math.Vector2Int32)">
+            <summary>
+            Multiplies a vector by a scalar value. 
+            </summary>
+            <param name="left">Scalar value.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the multiplication.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.Multiply(System.Int32@,HydraMF.Math.Vector2Int32@,HydraMF.Math.Vector2Int32@)">
+            <summary>
+            Multiplies a vector by a scalar value.
+            </summary>
+            <param name="left">Scalar value.</param>
+            <param name="right">Source vector.</param>
+            <param name="result">Result of the multiplication.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.Multiply(System.Int32,HydraMF.Math.Vector2Int32)">
+            <summary>
+            Multiplies a vector by a scalar value.
+            </summary>
+            <param name="left">Scalar value.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the multiplication.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.op_Division(HydraMF.Math.Vector2Int32,System.Int32)">
+            <summary>
+            Divides a vector by a scalar value. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Scalar value.</param>
+            <returns>Result of the division.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.Divide(HydraMF.Math.Vector2Int32@,System.Int32@,HydraMF.Math.Vector2Int32@)">
+            <summary>
+            Divides a vector by a scalar value.
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Scalar value.</param>
+            <param name="result">Result of the division.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.Divide(HydraMF.Math.Vector2Int32,System.Int32)">
+            <summary>
+            Divides a vector by a scalar value.
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Scalar value.</param>
+            <returns>Result of the division.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.Dot(HydraMF.Math.Vector2Int32,HydraMF.Math.Vector2Int32)">
+            <summary>
+            Calculates the dot product of two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>The dot product of the two vectors.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.Dot(HydraMF.Math.Vector2Int32@,HydraMF.Math.Vector2Int32@,System.Int32@)">
+            <summary>
+            Calculates the dot product of two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <param name="result"></param>
+            <returns>The dot product of the two vectors.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.Cross(HydraMF.Math.Vector2Int32,HydraMF.Math.Vector2Int32)">
+            <summary>
+            Calculates the cross product of two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>The cross product of the two vectors.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.Cross(HydraMF.Math.Vector2Int32@,HydraMF.Math.Vector2Int32@,System.Int32@)">
+            <summary>
+            Calculates the cross product of two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <param name="result">The cross product of the two vectors.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.Equals(System.Object)">
+            <summary>
+            Returns a value that indicates whether the current instance is equal to a specified object. 
+            </summary>
+            <param name="obj">Object to make the comparison with.</param>
+            <returns>true if the current instance is equal to the specified object; false otherwise.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Int32.GetHashCode">
+            <summary>
+            Gets the hash code of the vector object. 
+            </summary>
+            <returns>Hash code of the vector object.</returns>
+        </member>
+        <member name="P:HydraMF.Math.Vector2Int32.X">
+            <summary>
+            Gets or sets the x-component of the vector. 
+            </summary>
+        </member>
+        <member name="P:HydraMF.Math.Vector2Int32.Y">
+            <summary>
+            Gets or sets the y-component of the vector. 
+            </summary>
+        </member>
+        <member name="T:HydraMF.Math.Vector2Single">
+            <summary>
+              Defines a vector with two single-precision floating-point components. 
+            </summary>
+            <remarks>This structure is immutable.</remarks>
+        </member>
+        <member name="F:HydraMF.Math.Vector2Single.Zero">
+            <summary>
+            Returns a vector with all of its components set to zero. 
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.Vector2Single.UnitX">
+            <summary>
+            Returns the unit vector for the x-axis.  
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.Vector2Single.UnitY">
+            <summary>
+            Returns the unit vector for the y-axis. 
+            </summary>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.#ctor(System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of vector. 
+            </summary>
+            <param name="x">Initial value for the x-component of the vector.</param>
+            <param name="y">Initial value for the y-component of the vector.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.#ctor(HydraMF.Math.Vector2Single)">
+            <summary>
+            Initializes a new instance of vector. 
+            </summary>
+            <param name="vector">Initial value for the vector.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.LengthSquared">
+            <summary>
+            Calculates the length of the vector squared.
+            </summary>
+            <returns>The length of the vector squared.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Equals(HydraMF.Math.Vector2Single)">
+            <summary>
+              Determines whether the specified vector is equal to the current vector.
+            </summary>
+            <param name = "other">The vector to compare with the current vector. </param>
+            <returns>true if the specified vector is equal to the current vector; otherwise, false.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.op_Equality(HydraMF.Math.Vector2Single,HydraMF.Math.Vector2Single)">
+            <summary>
+              Compares two vector.
+            </summary>
+            <param name = "left">A vector to compare.</param>
+            <param name = "right">A vector to compare.</param>
+            <returns>
+              true if the X and Y values of left and right are equal; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.op_Inequality(HydraMF.Math.Vector2Single,HydraMF.Math.Vector2Single)">
+            <summary>
+              Compares two vector objects.
+            </summary>
+            <param name = "left">A vector to compare.</param>
+            <param name = "right">A vector to compare.</param>
+            <returns>
+              true if the values of either the X or Y of left and right differ; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.op_UnaryNegation(HydraMF.Math.Vector2Single)">
+            <summary>
+            Returns a vector pofloating in the opposite direction. 
+            </summary>
+            <param name = "value">The vector to negate.</param>
+            <returns>Vector pofloating in the opposite direction. </returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Negate(HydraMF.Math.Vector2Single@,HydraMF.Math.Vector2Single@)">
+            <summary>
+            Returns a vector pofloating in the opposite direction.
+            </summary>
+            <param name="value">The vector to negate.</param>
+            <param name="result">Vector pofloating in the opposite direction. </param>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Negate(HydraMF.Math.Vector2Single)">
+            <summary>
+            Returns a vector pofloating in the opposite direction. 
+            </summary>
+            <param name="value">The vector to negate.</param>
+            <returns>Vector pofloating in the opposite direction. </returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.op_Addition(HydraMF.Math.Vector2Single,HydraMF.Math.Vector2Single)">
+            <summary>
+            Adds two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the addition.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Add(HydraMF.Math.Vector2Single@,HydraMF.Math.Vector2Single@,HydraMF.Math.Vector2Single@)">
+            <summary>
+            Adds two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <param name="result">Result of the addition.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Add(HydraMF.Math.Vector2Single,HydraMF.Math.Vector2Single)">
+            <summary>
+            Adds two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the addition.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.op_Subtraction(HydraMF.Math.Vector2Single,HydraMF.Math.Vector2Single)">
+            <summary>
+            Subtracts a vector from a vector.  
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the subtraction.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Subtract(HydraMF.Math.Vector2Single@,HydraMF.Math.Vector2Single@,HydraMF.Math.Vector2Single@)">
+            <summary>
+            Subtracts a vector from a vector.  
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <param name="result">Result of the subtraction.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Subtract(HydraMF.Math.Vector2Single,HydraMF.Math.Vector2Single)">
+            <summary>
+            Subtracts a vector from a vector.  
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the subtraction.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.op_Multiply(System.Single,HydraMF.Math.Vector2Single)">
+            <summary>
+            Multiplies a vector by a scalar value. 
+            </summary>
+            <param name="left">Scalar value.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the multiplication.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Multiply(System.Single@,HydraMF.Math.Vector2Single@,HydraMF.Math.Vector2Single@)">
+            <summary>
+            Multiplies a vector by a scalar value.
+            </summary>
+            <param name="left">Scalar value.</param>
+            <param name="right">Source vector.</param>
+            <param name="result">Result of the multiplication.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Multiply(System.Single,HydraMF.Math.Vector2Single)">
+            <summary>
+            Multiplies a vector by a scalar value.
+            </summary>
+            <param name="left">Scalar value.</param>
+            <param name="right">Source vector.</param>
+            <returns>Result of the multiplication.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.op_Division(HydraMF.Math.Vector2Single,System.Single)">
+            <summary>
+            Divides a vector by a scalar value. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Scalar value.</param>
+            <returns>Result of the division.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Divide(HydraMF.Math.Vector2Single@,System.Single@,HydraMF.Math.Vector2Single@)">
+            <summary>
+            Divides a vector by a scalar value.
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Scalar value.</param>
+            <param name="result">Result of the division.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Divide(HydraMF.Math.Vector2Single,System.Single)">
+            <summary>
+            Divides a vector by a scalar value.
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Scalar value.</param>
+            <returns>Result of the division.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Dot(HydraMF.Math.Vector2Single,HydraMF.Math.Vector2Single)">
+            <summary>
+            Calculates the dot product of two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>The dot product of the two vectors.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Dot(HydraMF.Math.Vector2Single@,HydraMF.Math.Vector2Single@,System.Single@)">
+            <summary>
+            Calculates the dot product of two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <param name="result"></param>
+            <returns>The dot product of the two vectors.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Cross(HydraMF.Math.Vector2Single,HydraMF.Math.Vector2Single)">
+            <summary>
+            Calculates the cross product of two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <returns>The cross product of the two vectors.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Cross(HydraMF.Math.Vector2Single@,HydraMF.Math.Vector2Single@,System.Single@)">
+            <summary>
+            Calculates the cross product of two vectors. 
+            </summary>
+            <param name="left">Source vector.</param>
+            <param name="right">Source vector.</param>
+            <param name="result"></param>
+            <returns>The cross product of the two vectors.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Lerp(HydraMF.Math.Vector2Single,HydraMF.Math.Vector2Single,System.Single)">
+            <summary>
+            Performs a linear interpolation between two vectors. 
+            </summary>
+            <param name="value0">Source vector.</param>
+            <param name="value1">Source vector.</param>
+            <param name="amount">Value between 0 and 1 indicating the weight of value2. </param>
+            <returns>The linear interpolation of the two vectors.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Lerp(HydraMF.Math.Vector2Single@,HydraMF.Math.Vector2Single@,System.Single,HydraMF.Math.Vector2Single@)">
+            <summary>
+            Performs a linear interpolation between two vectors. 
+            </summary>
+            <param name="value0">Source vector.</param>
+            <param name="value1">Source vector.</param>
+            <param name="amount">Value between 0 and 1 indicating the weight of value2. </param>
+            <param name="result">The linear interpolation of the two vectors.</param>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.op_Implicit(HydraMF.Math.Vector2Int32)~HydraMF.Math.Vector2Single">
+            <summary>
+            Implicitly converts a Vector2Int into a Vector2Single.
+            </summary>
+            <param name="value">The vector to convert.</param>
+            <returns>The resulting conversion.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.op_Explicit(HydraMF.Math.Vector2Single)~HydraMF.Math.Vector2Int32">
+            <summary>
+            Explicitly converts a Vector2Single into a Vector2Int.
+            </summary>
+            <param name="value">The vector to convert.</param>
+            <returns>The resulting conversion.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.Equals(System.Object)">
+            <summary>
+            Returns a value that indicates whether the current instance is equal to a specified object. 
+            </summary>
+            <param name="obj">Object to make the comparison with.</param>
+            <returns>true if the current instance is equal to the specified object; false otherwise.</returns>
+        </member>
+        <member name="M:HydraMF.Math.Vector2Single.GetHashCode">
+            <summary>
+            Gets the hash code of the vector object. 
+            </summary>
+            <returns>Hash code of the vector object.</returns>
+        </member>
+        <member name="P:HydraMF.Math.Vector2Single.X">
+            <summary>
+            Gets or sets the x-component of the vector. 
+            </summary>
+        </member>
+        <member name="P:HydraMF.Math.Vector2Single.Y">
+            <summary>
+            Gets or sets the y-component of the vector. 
+            </summary>
+        </member>
+        <member name="T:HydraMF.Math.AngleSingle">
+            <summary>
+              Defines an angle. 
+            </summary>
+            <remarks>This structure is immutable.</remarks>
+        </member>
+        <member name="F:HydraMF.Math.AngleSingle.MinValue">
+            <summary>
+              Represents the smallest possible value of an AngleSingle. This field is read-only.
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.AngleSingle.MaxValue">
+            <summary>
+              Represents the largest possible value of an AngleSingle. This field is read-only.
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.AngleSingle.Zero">
+            <summary>
+              Represents a zero AngleSingle. This field is read-only.
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.AngleSingle.QuarterRevolution">
+            <summary>
+              Represents a quarter of a revolution AngleSingle. This field is read-only.
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.AngleSingle.HalfRevolution">
+            <summary>
+              Represents a half of a revolution AngleSingle. This field is read-only.
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.AngleSingle.ThreeQuartersRevolution">
+            <summary>
+              Represents a three quarters of a revolution AngleSingle. This field is read-only.
+            </summary>
+        </member>
+        <member name="F:HydraMF.Math.AngleSingle.OneRevolution">
+            <summary>
+              Represents a full revolution AngleSingle. This field is read-only.
+            </summary>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.#ctor(System.Single)">
+            <summary>
+              Initializes a new instance of the AngleSingle class with the specified value.
+            </summary>
+            <param name = "radians">The value of the angle in radians.</param>
+            <remarks>
+              This constructor is private so that an angle can only be instanciated using the static methods.
+              It's done this way to avoid confusion with the units during instanciation.
+            </remarks>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.FromRadians(System.Single)">
+            <summary>
+              Creates a new instance of AngleSingle from a radians value.
+            </summary>
+            <param name = "radians">The angle in radians.</param>
+            <returns>AngleSingle structure matching the radians value.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.FromDegrees(System.Single)">
+            <summary>
+              Creates a new instance of AngleSingle from a degrees value.
+            </summary>
+            <param name = "degrees">The degrees component of the angle.</param>
+            <returns>AngleSingle structure matching the degrees value.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.FromRevolutions(System.Single)">
+            <summary>
+              Creates a new instance of AngleSingle from a revolutions value.
+            </summary>
+            <param name = "revolutions">The angle in revolutions.</param>
+            <returns>AngleSingle structure matching the revolutions value.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.Equals(HydraMF.Math.AngleSingle)">
+            <summary>
+              Gets a value indicating whether the specified AngleSingle is equal to the current AngleSingle.
+            </summary>
+            <param name = "other">The AngleSingle to compare with the current AngleSingle. </param>
+            <returns>true if the specified AngleSingle is equal to the current AngleSingle; otherwise, false.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.op_Equality(HydraMF.Math.AngleSingle,HydraMF.Math.AngleSingle)">
+            <summary>
+              Compares two AngleSingle objects.
+            </summary>
+            <param name = "left">A AngleSingle to compare.</param>
+            <param name = "right">A AngleSingle to compare.</param>
+            <returns>true if the angle values of left and right are equal; otherwise, false.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.op_Inequality(HydraMF.Math.AngleSingle,HydraMF.Math.AngleSingle)">
+            <summary>
+              Compares two AngleSingle objects.
+            </summary>
+            <param name = "left">A AngleSingle to compare.</param>
+            <param name = "right">A AngleSingle to compare.</param>
+            <returns>true if the angle values of left and right differ; otherwise, false.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.op_LessThan(HydraMF.Math.AngleSingle,HydraMF.Math.AngleSingle)">
+            <summary>
+              Returns a value indicating whether a specified AngleSingle is less than another specified AngleSingle.
+            </summary>
+            <param name = "left">An AngleSingle.</param>
+            <param name = "right">An AngleSingle.</param>
+            <returns>true if left is less than right; otherwise, false.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.op_LessThanOrEqual(HydraMF.Math.AngleSingle,HydraMF.Math.AngleSingle)">
+            <summary>
+              Returns a value indicating whether a specified AngleSingle is less than or equal to another specified AngleSingle.
+            </summary>
+            <param name = "left">An AngleSingle.</param>
+            <param name = "right">An AngleSingle.</param>
+            <returns>true if left is less than or equal to right; otherwise, false.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.op_GreaterThan(HydraMF.Math.AngleSingle,HydraMF.Math.AngleSingle)">
+            <summary>
+              Returns a value indicating whether a specified AngleSingle is greater than another specified AngleSingle.
+            </summary>
+            <param name = "left">An AngleSingle.</param>
+            <param name = "right">An AngleSingle.</param>
+            <returns>true if left is greater than right; otherwise, false.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.op_GreaterThanOrEqual(HydraMF.Math.AngleSingle,HydraMF.Math.AngleSingle)">
+            <summary>
+              Returns a value indicating whether a specified AngleSingle is greater than or equal to another specified AngleSingle.
+            </summary>
+            <param name = "left">An AngleSingle.</param>
+            <param name = "right">An AngleSingle.</param>
+            <returns>true if left is greater than or equal to right; otherwise, false.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.op_UnaryNegation(HydraMF.Math.AngleSingle)">
+            <summary>
+            Negates an angle.
+            </summary>
+            <param name="angle">Source angle.</param>
+            <returns>Result of the negation.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.Negate(HydraMF.Math.AngleSingle@,HydraMF.Math.AngleSingle@)">
+            <summary>
+            Negates an angle.
+            </summary>
+            <param name="angle">Source angle.</param>
+            <param name="result"></param>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.Negate(HydraMF.Math.AngleSingle)">
+            <summary>
+            Negates an angle.
+            </summary>
+            <param name="angle">Source angle.</param>
+            <returns>Result of the negation.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.op_Addition(HydraMF.Math.AngleSingle,HydraMF.Math.AngleSingle)">
+            <summary>
+            Adds two vectors. 
+            </summary>
+            <param name="left">Source angle.</param>
+            <param name="right">Source angle.</param>
+            <returns>Result of the addition.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.Add(HydraMF.Math.AngleSingle@,HydraMF.Math.AngleSingle@,HydraMF.Math.AngleSingle@)">
+            <summary>
+            Adds two vectors. 
+            </summary>
+            <param name="left">Source angle.</param>
+            <param name="right">Source angle.</param>
+            <param name="result">Result of the addition.</param>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.Add(HydraMF.Math.AngleSingle,HydraMF.Math.AngleSingle)">
+            <summary>
+            Adds two vectors. 
+            </summary>
+            <param name="left">Source angle.</param>
+            <param name="right">Source angle.</param>
+            <returns>Result of the addition.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.op_Subtraction(HydraMF.Math.AngleSingle,HydraMF.Math.AngleSingle)">
+            <summary>
+            Subtracts a angle from a angle.  
+            </summary>
+            <param name="left">Source angle.</param>
+            <param name="right">Source angle.</param>
+            <returns>Result of the subtraction.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.Subtract(HydraMF.Math.AngleSingle@,HydraMF.Math.AngleSingle@,HydraMF.Math.AngleSingle@)">
+            <summary>
+            Subtracts a angle from a angle.  
+            </summary>
+            <param name="left">Source angle.</param>
+            <param name="right">Source angle.</param>
+            <param name="result">Result of the subtraction.</param>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.Subtract(HydraMF.Math.AngleSingle,HydraMF.Math.AngleSingle)">
+            <summary>
+            Subtracts a angle from a angle.  
+            </summary>
+            <param name="left">Source angle.</param>
+            <param name="right">Source angle.</param>
+            <returns>Result of the subtraction.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.op_Multiply(System.Single,HydraMF.Math.AngleSingle)">
+            <summary>
+            Multiplies a scalar by an angle value. 
+            </summary>
+            <param name="left">Scalar value.</param>
+            <param name="right">Source angle.</param>
+            <returns>Result of the multiplication.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.Multiply(System.Single@,HydraMF.Math.AngleSingle@,HydraMF.Math.AngleSingle@)">
+            <summary>
+            Multiplies a angle by a scalar value.
+            </summary>
+            <param name="left">Scalar value.</param>
+            <param name="right">Source angle.</param>
+            <param name="result">Result of the multiplication.</param>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.Multiply(System.Single,HydraMF.Math.AngleSingle)">
+            <summary>
+            Multiplies a angle by a scalar value.
+            </summary>
+            <param name="left">Scalar value.</param>
+            <param name="right">Source angle.</param>
+            <returns>Result of the multiplication.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.op_Division(HydraMF.Math.AngleSingle,System.Single)">
+            <summary>
+            Divides a angle by a scalar value. 
+            </summary>
+            <param name="left">Source angle.</param>
+            <param name="right">Scalar value.</param>
+            <returns>Result of the division.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.Divide(HydraMF.Math.AngleSingle@,System.Single@,HydraMF.Math.AngleSingle@)">
+            <summary>
+            Divides a angle by a scalar value.
+            </summary>
+            <param name="left">Source angle.</param>
+            <param name="right">Scalar value.</param>
+            <param name="result">Result of the division.</param>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.Divide(HydraMF.Math.AngleSingle,System.Single)">
+            <summary>
+            Divides a angle by a scalar value.
+            </summary>
+            <param name="left">Source angle.</param>
+            <param name="right">Scalar value.</param>
+            <returns>Result of the division.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.Normalized">
+            <summary>
+              Returns a normalized angle.
+            </summary>
+            <returns>
+              An angle within 0 degrees and 360 degres, without changing the original geometry.
+            </returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.IsRight">
+            <summary>
+            Gets a value indicating whether the angle is a right angle.
+            </summary>
+            <returns>
+            true if angle is a right angle; otherwise, false.
+            </returns>
+            <remarks>
+            A right angle is, when normalized, System.Math.PI/2 radians (90 degrees) or 3*System.Math.PI/2 (270 degrees).
+            </remarks>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.IsAcute">
+            <summary>
+            Gets a value indicating whether the angle is an acute angle.
+            </summary>
+            <returns>
+            true if angle is an acute angle; otherwise, false.
+            </returns>
+            <remarks>
+            An acute angle is, when normalized, less than System.Math.PI/2 radians (90 degrees) or greater than 3*System.Math.PI/2 (270 degrees).
+            </remarks>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.IsObtuse">
+            <summary>
+            Gets a value indicating whether the angle is an obtuse angle.
+            </summary>
+            <returns>
+            true if angle is an obtuse angle; otherwise, false.
+            </returns>
+            <remarks>
+            An obtuse angle is, when normalized, greater than System.Math.PI/2 radians (90 degrees) and less than System.Math.PI radians (180 degrees) or, greater than System.Math.PI radians (180 degrees) and less than 3*System.Math.PI/2 (270 degrees).
+            </remarks>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.IsStraight">
+            <summary>
+            Gets a value indicating whether the angle is a straight angle.
+            </summary>
+            <returns>
+            true if angle is a straight angle; otherwise, false.
+            </returns>
+            <remarks>
+            A straight angle is, when normalized, System.Math.PI radians (180 degrees).
+            </remarks>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.IsOblique">
+            <summary>
+            Gets a value indicating whether the angle is an oblique angle.
+            </summary>
+            <returns>
+            true if angle is an oblique angle; otherwise, false.
+            </returns>
+            <remarks>
+            A oblique angle is an angle that is not right.
+            </remarks>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.IsReflex">
+            <summary>
+            Gets a value indicating whether the angle is a reflex angle.
+            </summary>
+            <returns>
+            true if angle is a reflex angle; otherwise, false.
+            </returns>
+            <remarks>
+            A reflex angle is, when normalized, an angle greater than System.Math.PI radians (180 degrees).
+            </remarks>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:HydraMF.Math.AngleSingle.Abs(HydraMF.Math.AngleSingle)" -->
+        <member name="M:HydraMF.Math.AngleSingle.Sin(HydraMF.Math.AngleSingle)">
+            <summary>
+            Returns the sine of the angle.
+            </summary>
+            <param name="angle">Source angle.</param>
+            <returns>The sine of the angle.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.Cos(HydraMF.Math.AngleSingle)">
+            <summary>
+            Returns the cosine of the angle.
+            </summary>
+            <returns>The cosine of the angle.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.Compare(HydraMF.Math.AngleSingle,HydraMF.Math.AngleSingle)">
+            <summary>
+              Compares two Angles and returns an integer that indicates whether the first value is less than, equal to, or greater than the second value.
+            </summary>
+            <returns>Less than zero if left is less than right; Zero if left equals right; Greater than zero if left is greater than right.</returns>
+            <param name = "angle0">The first AngleSingle.</param>
+            <param name = "angle1">The second AngleSingle.</param>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.Compare(HydraMF.Math.AngleSingle,HydraMF.Math.AngleSingle,System.Boolean)">
+            <summary>
+              Compares two Angles and returns an integer that indicates whether the first value is less than, equal to, or greater than the second value.
+            </summary>
+            <returns>Less than zero if left is less than right; Zero if left equals right; Greater than zero if left is greater than right.</returns>
+            <param name = "angle0">The first AngleSingle.</param>
+            <param name = "angle1">The second AngleSingle.</param>
+            <param name = "ignorePeriod">A Boolean indicating a period-sensitive or insensitive comparison. true indicates a period-insensitive comparison. Default value is true.</param>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.Equals(System.Object)">
+            <summary>
+              Gets a value indicating whether the specified Object is equal to the current AngleSingle.
+            </summary>
+            <param name = "obj">The Object to compare with the current AngleSingle. </param>
+            <returns>true if the specified Object is equal to the current AngleSingle; otherwise, false.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.GetHashCode">
+            <summary>
+              Serves as a hash function for AngleSingle, suitable for use in hashing algorithms and data structures like a hash table.
+            </summary>
+            <returns>A hash code for the current AngleSingle.</returns>
+        </member>
+        <member name="M:HydraMF.Math.AngleSingle.ToString">
+            <summary>
+              Converts the numeric value of this instance to its equivalent string representation.
+            </summary>
+            <returns>The string representation of the value of this instance.</returns>
+        </member>
+        <member name="P:HydraMF.Math.AngleSingle.Radians">
+            <summary>
+              Gets the angle in radians.
+            </summary>
+            <value>The angle in radians.</value>
+        </member>
+        <member name="P:HydraMF.Math.AngleSingle.Degrees">
+            <summary>
+              Gets the angle in degrees.
+            </summary>
+            <value>The angle in degrees.</value>
+        </member>
+        <member name="P:HydraMF.Math.AngleSingle.Grads">
+            <summary>
+              Gets the angle in grads.
+            </summary>
+            <value>The angle in grads.</value>
+        </member>
+        <member name="P:HydraMF.Math.AngleSingle.Revolutions">
+            <summary>
+              Gets the angle in revolutions.
+            </summary>
+            <value>The angle in revolutions.</value>
+        </member>
+    </members>
+</doc>
