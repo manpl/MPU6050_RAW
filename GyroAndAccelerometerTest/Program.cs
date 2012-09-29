@@ -43,46 +43,28 @@ namespace GyroAndAccelerometerTest
 
             DisableSleepMode();
 
-            //// enable dlpf 3 = 44 Hz, 4.9 ms / 42 Hz, 4.8 1 ms, kHz
-            //mpu.Write(new[] {MPU6050Regs.CONFIG, (byte)3 });
-
-            //mpu.Write(new[] { MPU6050Regs.ACCE_CONFIG, (byte)8 });
-            //mpu.Write(new[] { MPU6050Regs.GYRO_CONFIG, (byte)8 });
-            ////Disable sensor output to FIFO buffer
-            //mpu.Write(new[] { MPU6050Regs.FIFO_EN , (byte)0});
-            ////Reset sensor signal paths
-            //mpu.Write(new[] { MPU6050Regs.SIGNAL_PATH_RESET, (byte)0 });
-            
-            //var accConfig = mpu.Read(MPU6050Regs.ACCE_CONFIG);
-            //var gyrConfig = mpu.Read(MPU6050Regs.GYRO_CONFIG);
-
-            //Debug.Print(gyrConfig.ToSingleString());
-            //Debug.Print(accConfig.ToSingleString());
-
             Thread.Sleep(1000);
 
             ArrayList calibrationMeasurements = new ArrayList();
-            for (int i = 0; i < 30; i++)
-            {
-                calibrationMeasurements.Add(GetMpuRawData());
-                Thread.Sleep(281);
-            }
+            GetMeasurementsForCalibration(calibrationMeasurements);
 
             MPU6050 measurement = new MPU6050(calibrationMeasurements);
-            int j = 0;
 
             while (true)
             {
                 var bytes = GetMpuRawData();
                 measurement.Update(bytes);
-                measurement.ComputeAngles();
                 Thread.Sleep(1);
-                j++;
-                if (j % 5 == 0)
-                {
-                    measurement.PrintAngles();
-                    j = 0;
-                }
+                measurement.PrintAngles();
+            }
+        }
+
+        private static void GetMeasurementsForCalibration(ArrayList calibrationMeasurements)
+        {
+            for (int i = 0; i < 30; i++)
+            {
+                calibrationMeasurements.Add(GetMpuRawData());
+                Thread.Sleep(281);
             }
         }
 

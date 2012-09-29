@@ -44,6 +44,7 @@ namespace GyroAndAccelerometerTest
         {
             UpdateAccelerometer(rawMeasurement);
             UpdateGyro(rawMeasurement);
+            ComputeAngles();
         }
 
         private void UpdateAccelerometer(byte[] rawMeasurement)
@@ -64,7 +65,7 @@ namespace GyroAndAccelerometerTest
             LatestGyro.Z = (gyroZ - InitialRawGyro.Z) / gyroScale * time;
         }
 
-        public void ComputeAngles()
+        private void ComputeAngles()
         {
             //http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1208368036
             double accXAngle = 57.295 * Trigo.Atan((float)this.LatestAcc.Y / Trigo.Sqrt(Trigo.Pow((float)this.LatestAcc.Z, 2) + Trigo.Pow((float)LatestAcc.X, 2)));
